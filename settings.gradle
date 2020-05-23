@@ -1,2 +1,3 @@
 rootProject.name='ruffjni'
 include ':app'
+include ':nativetest'
