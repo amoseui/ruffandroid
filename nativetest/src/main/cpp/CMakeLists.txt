@@ -34,7 +34,12 @@ include_directories(../../../../app/src/main/cpp/include)
 # can link multiple libraries, such as libraries you define in this
 # build script, prebuilt third-party libraries, or system libraries.
 
-# add_subdirectory(../../../../app/src/main/cpp, "${CMAKE_CURRENT_BINARY_DIR}/native-lib_build")
+#add_subdirectory(../../../../app/src/main/cpp, "${CMAKE_CURRENT_BINARY_DIR}/native-lib_build")
+#add_subdirectory(lib, ../../../../app/build/intermediates/cmake/debug/obj)
+#add_subdirectory(jni)
+add_library(native-lib IMPORTED SHARED)
+set_target_properties(native-lib PROPERTIES IMPORTED_LOCATION
+        ${CMAKE_SOURCE_DIR}/jni/lib/${ANDROID_ABI}/libnative-lib.so)
 target_link_libraries( # Specifies the target library.
                        main_unittest
 
