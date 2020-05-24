@@ -29,6 +29,6 @@ public class ExampleInstrumentedTest {
 
     @Test
     public void nativeTest() {
-        assertEquals("NATIVE TEST FAILED!", 0, new NativeTest().runTest());
+        assertEquals("NATIVE TEST FAILED! Please check the details in log.", 0, new NativeTest().runTest());
     }
 }
