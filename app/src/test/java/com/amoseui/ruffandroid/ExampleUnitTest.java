@@ -1,4 +1,4 @@
-package com.amoseui.ruffjni;
+package com.amoseui.ruffandroid;
 
 import org.junit.Test;
 

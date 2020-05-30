@@ -1,4 +1,4 @@
-package com.amoseui.ruffjni;
+package com.amoseui.ruffandroid;
 
 import android.content.Context;
 
@@ -22,6 +22,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
 
-        assertEquals("com.amoseui.ruffjni", appContext.getPackageName());
+        assertEquals("com.amoseui.ruffandroid", appContext.getPackageName());
     }
 }
